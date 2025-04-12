@@ -7,7 +7,7 @@ const musicData = {
             album: "Neon Horizons",
             cover: "https://i.pinimg.com/736x/79/3d/dd/793ddd4ad5ca955a99f5a8ba728db845.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Undertale_%20Time%20Paradox%20%5BOST%5D.mp3",
-            duration: "3:45"
+            duration: "auto"
         },
         {
             id: 2,
@@ -16,7 +16,7 @@ const musicData = {
             album: "Roblox Doors - OST",
             cover: "https://i1.sndcdn.com/artworks-M4ZcYSSgFhfz1D1U-sp9nhQ-t500x500.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20ORIGINAL%20SOUNDTRACK%20VOL.%204%20-%20Oh%20Dam.mp3",
-            duration: "4:12"
+            duration: "auto"
         },
         {
             id: 3,
@@ -25,7 +25,7 @@ const musicData = {
             album: "FORSAKEN - OST",
             cover: "https://api.voicemod.net/v1/desktop/api.windows/v2/communityVoices/voice/82575ca45e/image.png",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/READY%20OR%20NOT%20-%20c00lkidd%20Chase%20Theme%20%20Forsaken%20OST.mp3",
-            duration: "3:56"
+            duration: "auto"
         },
         {
             id: 4,
@@ -34,7 +34,7 @@ const musicData = {
             album: "A Minecraft Movie",
             cover: "https://i1.sndcdn.com/artworks-NWK8fSlQueNw-0-t1080x1080.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Steve's%20Lava%20Chicken%20Song%20(Lyrics)%20A%20Minecraft%20Movie%20Soundtrack.mp3",
-            duration: "4:30"
+            duration: "auto"
         },
         {
             id: 5,
@@ -43,7 +43,7 @@ const musicData = {
             album: "none",
             cover: "https://ecsmedia.pl/c/double-life-b-iext156053548.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Pharrell%20Williams%20-%20Double%20Life%20(Lyrics)%20(from%20Despicable%20Me%204).mp3",
-            duration: "3:28"
+            duration: "auto"
         },
         {
             id: 6,
@@ -52,7 +52,7 @@ const musicData = {
             album: "Doors Ost",
             cover: "https://i1.sndcdn.com/artworks-3fFGOyIuUOZ1dQUy-1OaUyw-t500x500.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20ORIGINAL%20SOUNDTRACK%20VOL.%201%20-%20Dawn%20Of%20The%20Doors.mp3",
-            duration: "4:05"
+            duration: "auto"
         },
         {
             id: 7,
@@ -61,7 +61,7 @@ const musicData = {
             album: "none",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20113252.png",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Calm%20Before%20the%20Storm.mp3",
-            duration: "3:52"
+            duration: "auto"
         },
         {
             id: 8,
@@ -70,7 +70,7 @@ const musicData = {
             album: "none",
             cover: "https://i.scdn.co/image/ab67616d0000b27307ff9101b807094a8d95e472",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Rat%20Dance%20Song%20(Chess%20Type%20Beat).mp3",
-            duration: "4:18"
+            duration: "auto"
         },
         {
             id: 9,
@@ -79,7 +79,7 @@ const musicData = {
             album: "Metropolitan",
             cover: "https://i1.sndcdn.com/artworks-8LPbcMKyqu1ZCd87-2AfrRg-t500x500.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/KSI%20-%20Thick%20Of%20It%20(feat.%20Trippie%20Redd)%20%5BOfficial%20Lyric%20Video%5D.mp3",
-            duration: "3:39"
+            duration: "auto"
         },
         {
             id: 10,
@@ -88,7 +88,7 @@ const musicData = {
             album: "none",
             cover: "https://images.unsplash.com/photo-1502657877623-f66bf489d236?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVkJTIwc3VucmlzZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Amnesia%20-%20Official%20Music%20Video%20(from%20Garten%20of%20Banban)%20%20Lyrics.mp3",
-            duration: "4:22"
+            duration: "auto"
         },
 		{
             id: 11,
@@ -97,7 +97,7 @@ const musicData = {
             album: "none",
             cover: "https://i1.sndcdn.com/artworks-az7nDtlExUZa7OyJ-zgeE1A-t500x500.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/ROSE%20&%20Bruno%20Mars%20-%20APT.%20(Official%20Music%20Video).mp3",
-            duration: "4:22"
+            duration: "auto"
         },
 		{
             id: 12,
@@ -106,7 +106,7 @@ const musicData = {
             album: "FORSAKEN - OST",
             cover: "https://i1.sndcdn.com/artworks-YiQqOyBBdNHy2lKt-HXnIJg-t500x500.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Forsaken%20%20John%20Doe%20Terror%20Radius%20Theme.mp3",
-            duration: "4:22"
+            duration: "auto"
         },
 		{
             id: 13,
@@ -115,7 +115,7 @@ const musicData = {
             album: "Roblox Doors - OST",
             cover: "https://thumbnails.vrclist.com/358346.png",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20ORIGINAL%20SOUNDTRACK%20VOL.%202%20-%20Jeff's%20Jingle.mp3",
-            duration: "4:22"
+            duration: "auto"
         },
 		{
             id: 14,
@@ -124,7 +124,7 @@ const musicData = {
             album: "FORSAKEN - OST",
             cover: "https://i1.sndcdn.com/artworks-kOqHIJxqsXG3YyYG-ytTXcA-t500x500.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/bluudude%20chase%20track%20EXTENSION%20FLP%20(Forsaken).mp3",
-            duration: "4:22"
+            duration: "auto"
         },
 		{
             id: 15,
@@ -133,7 +133,7 @@ const musicData = {
             album: "Roblox Doors - OST",
             cover: "https://i1.sndcdn.com/artworks-zIVTRuPLOIl9oo8e-RJJ7pg-t500x500.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20FLOOR%202%20Roblox%20OST_%20Ready%20or%20Not.mp3",
-            duration: "4:22"
+            duration: "auto"
         },
 		{
             id: 16,
@@ -142,7 +142,7 @@ const musicData = {
             album: "none",
             cover: "https://m.media-amazon.com/images/M/MV5BYWIwNjc5Y2UtYmY0Zi00YzQ3LWIzZDctZWRlODI1OGVjNDA3XkEyXkFqcGc@._V1_QL75_UY190_CR74,0,190,190_.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Juice%20Wrld%20-%20Lucid%20Dreams%20(Lyrics).mp3",
-            duration: "4:22"
+            duration: "auto"
         },
 		{
             id: 17,
@@ -151,7 +151,7 @@ const musicData = {
             album: "Roblox Doors - OST",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20120008.png",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Rock%20Bottom%20(Full%20Version).mp3",
-            duration: "4:22"
+            duration: "auto"
         },		
 		{
             id: 18,
@@ -160,7 +160,7 @@ const musicData = {
             album: "none",
             cover: "https://github.com/notif4ir/reddins_database/blob/main/Zrzut%20ekranu%202025-04-12%20120247.png?raw=true",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Jeff's%20Jazzy%20Jingle.mp3",
-            duration: "4:22"
+            duration: "auto"
         },
 		{
             id: 19,
@@ -169,7 +169,7 @@ const musicData = {
             album: "FORSAKEN - OST",
             cover: "https://tiermaker.com/images//media/template_images/2024/17797426/forsaken-roblox-ost-17797426/zzzzz-1743455297close-to-me.png",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BANNIHILATION%20John%20Doe%20vs.%20FRIEND%20Elliot%5D%20CLOSE%20TO%20ME%20(Red%20Moonrise%20Mix)%20%5BForsaken%20OST%5D.mp3",
-            duration: "4:22"
+            duration: "auto"
         },
 		{
             id: 20,
@@ -178,7 +178,7 @@ const musicData = {
             album: "FORSAKEN - OST",
             cover: "https://i1.sndcdn.com/artworks-LHWIzBvV8bJI6vo5-9h7c2g-t500x500.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/SMILE%20(FORSAKEN%20OFFICIAL).mp3",
-            duration: "4:22"
+            duration: "auto"
         },
 		{
             id: 21,
@@ -187,7 +187,7 @@ const musicData = {
             album: "none",
             cover: "https://www.dafont.com/forum/attach/orig/1/1/1134278.png",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Watch%20This.mp3",
-            duration: "4:22"
+            duration: "auto"
         },
 	    {
             id: 22,
@@ -196,7 +196,7 @@ const musicData = {
             album: "Roblox Doors - OST",
             cover: "https://i.scdn.co/image/ab67616d0000b273769c1563d3e4b9bd619b5d1b",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20FLOOR%202%20Roblox%20OST_%20Fresh%20Rain.mp3",
-            duration: "4:22"
+            duration: "auto"
         },
 		{
             id: 23,
@@ -205,7 +205,7 @@ const musicData = {
             album: "FORSAKEN - OST",
             cover: "https://i.scdn.co/image/ab67656300005f1f129661b2eecbc5f3992b02b2",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/download.mp3",
-            duration: "4:22"
+            duration: "auto"
         },
 		/*
 		{
@@ -215,7 +215,7 @@ const musicData = {
             album: "",
             cover: "",
             mp3: "",
-            duration: "4:22"
+            duration: "auto"
         },
 		*/
     ],
