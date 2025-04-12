@@ -113,7 +113,7 @@ const musicData = {
             title: "Jeff's Jingle",
             artist: "LSplash",
             album: "Roblox Doors - OST",
-            cover: "https://static.wikia.nocookie.net/doors-game/images/b/b5/Jeffyhappymines.png/revision/latest/scale-to-width-down/250?cb=20241124052546",
+            cover: "https://thumbnails.vrclist.com/358346.png",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20ORIGINAL%20SOUNDTRACK%20VOL.%202%20-%20Jeff's%20Jingle.mp3",
             duration: "4:22"
         },
@@ -144,7 +144,7 @@ const musicData = {
             id: 1,
             name: "Roblox Doors - OST",
             artist: "LSplash",
-            cover: "https://static.wikia.nocookie.net/roblox-doors/images/c/ca/DoorsIcon3.png/revision/latest?cb=20231125033629",
+            cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20115556.png",
             songs: [2,6,13]
         },
 		{
