@@ -180,6 +180,44 @@ const musicData = {
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/SMILE%20(FORSAKEN%20OFFICIAL).mp3",
             duration: "4:22"
         },
+		{
+            id: 21,
+            title: "Watch This!",
+            artist: "The Foundation RBLX",
+            album: "none",
+            cover: "https://www.dafont.com/forum/attach/orig/1/1/1134278.png",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Watch%20This.mp3",
+            duration: "4:22"
+        },
+	    {
+            id: 22,
+            title: "Fresh Rain",
+            artist: "LSplash",
+            album: "Roblox Doors - OST",
+            cover: "https://i.scdn.co/image/ab67616d0000b273769c1563d3e4b9bd619b5d1b",
+            mp3: "https://i.scdn.co/image/ab67616d0000b273769c1563d3e4b9bd619b5d1b",
+            duration: "4:22"
+        },
+		{
+            id: 23,
+            title: "??? CT - Forsaken OST",
+            artist: "Forsaken",
+            album: "FORSAKEN - OST",
+            cover: "https://i.scdn.co/image/ab67616d0000b273769c1563d3e4b9bd619b5d1b",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/download.mp3",
+            duration: "4:22"
+        },
+		/*
+		{
+            id: 20,
+            title: "",
+            artist: "",
+            album: "",
+            cover: "",
+            mp3: "",
+            duration: "4:22"
+        },
+		*/
     ],
     
     playlists: [],
@@ -190,14 +228,14 @@ const musicData = {
             name: "Roblox Doors - OST",
             artist: "LSplash",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20115556.png",
-            songs: [2,6,13]
+            songs: [2,6,13,22]
         },
 		{
             id: 2,
             name: "FORSAKEN - OST",
             artist: "Forsaken",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20113449.png",
-            songs: [3,12,19,20]
+            songs: [3,12,19,20,23]
         },
 		{
             id: 3,
@@ -213,13 +251,13 @@ const musicData = {
             id: 1,
             name: "LSplash",
             cover: "https://i.scdn.co/image/ab6761610000e5eb4de95f4daada83eedf6019b8",
-            songs: [2,6,13]
+            songs: [2,6,13,22]
         },
         {
             id: 2,
             name: "Forsaken",
             cover: "https://discord.do/wp-content/uploads/2025/02/Forsaken-Roblox-Discord-server.jpg",
-            songs: [3,12,19,20]
+            songs: [3,12,19,20,23]
         },
         {
             id: 3,
@@ -243,7 +281,7 @@ const musicData = {
             id: 5,
             name: "The Foundation RBLX",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20113252.png",
-            songs: [7,18,17]
+            songs: [7,18,17,21]
         },
 		{
             id: 6,
