@@ -195,7 +195,7 @@ const musicData = {
             artist: "LSplash",
             album: "Roblox Doors - OST",
             cover: "https://i.scdn.co/image/ab67616d0000b273769c1563d3e4b9bd619b5d1b",
-            mp3: "https://i.scdn.co/image/ab67616d0000b273769c1563d3e4b9bd619b5d1b",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20FLOOR%202%20Roblox%20OST_%20Fresh%20Rain.mp3",
             duration: "4:22"
         },
 		{
@@ -203,7 +203,7 @@ const musicData = {
             title: "??? CT - Forsaken OST",
             artist: "Forsaken",
             album: "FORSAKEN - OST",
-            cover: "https://i.scdn.co/image/ab67616d0000b273769c1563d3e4b9bd619b5d1b",
+            cover: "https://i.scdn.co/image/ab67656300005f1f129661b2eecbc5f3992b02b2",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/download.mp3",
             duration: "4:22"
         },
