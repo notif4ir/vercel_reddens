@@ -1,0 +1,225 @@
+const musicData = {
+    songs: [
+        {
+            id: 1,
+            title: "Time Paradox OST",
+            artist: "Toby Fox",
+            album: "Neon Horizons",
+            cover: "https://i.pinimg.com/736x/79/3d/dd/793ddd4ad5ca955a99f5a8ba728db845.jpg",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Undertale_%20Time%20Paradox%20%5BOST%5D.mp3",
+            duration: "3:45"
+        },
+        {
+            id: 2,
+            title: "OH DAM",
+            artist: "LSplash",
+            album: "Roblox Doors - OST",
+            cover: "https://static.wikia.nocookie.net/doors-game/images/5/5d/Volume_4.jpeg/revision/latest/smart/width/250/height/250?cb=20240921194807",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20ORIGINAL%20SOUNDTRACK%20VOL.%204%20-%20Oh%20Dam.mp3",
+            duration: "4:12"
+        },
+        {
+            id: 3,
+            title: "C00LKID - FORSAKEN OST",
+            artist: "Forsaken",
+            album: "FORSAKEN - OST",
+            cover: "https://api.voicemod.net/v1/desktop/api.windows/v2/communityVoices/voice/82575ca45e/image.png",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/READY%20OR%20NOT%20-%20c00lkidd%20Chase%20Theme%20%20Forsaken%20OST.mp3",
+            duration: "3:56"
+        },
+        {
+            id: 4,
+            title: "Steve's Lava Chicken",
+            artist: "Minecraft",
+            album: "A Minecraft Movie",
+            cover: "https://i1.sndcdn.com/artworks-NWK8fSlQueNw-0-t1080x1080.jpg",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Steve's%20Lava%20Chicken%20Song%20(Lyrics)%20A%20Minecraft%20Movie%20Soundtrack.mp3",
+            duration: "4:30"
+        },
+        {
+            id: 5,
+            title: "Double Life",
+            artist: "Pharrel Williams",
+            album: "none",
+            cover: "https://ecsmedia.pl/c/double-life-b-iext156053548.jpg",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Pharrell%20Williams%20-%20Double%20Life%20(Lyrics)%20(from%20Despicable%20Me%204).mp3",
+            duration: "3:28"
+        },
+        {
+            id: 6,
+            title: "Dawn Of Doors",
+            artist: "LSplash",
+            album: "Doors Ost",
+            cover: "https://i1.sndcdn.com/artworks-3fFGOyIuUOZ1dQUy-1OaUyw-t500x500.jpg",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20ORIGINAL%20SOUNDTRACK%20VOL.%201%20-%20Dawn%20Of%20The%20Doors.mp3",
+            duration: "4:05"
+        },
+        {
+            id: 7,
+            title: "Calm Before The Storm",
+            artist: "The Foundation RBLX",
+            album: "none",
+            cover: "https://static.wikia.nocookie.net/the-official-doors-floor-2-fanmade/images/e/ef/Foundationicon.png/revision/latest/thumbnail/width/360/height/360?cb=20250225200710",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Calm%20Before%20the%20Storm.mp3",
+            duration: "3:52"
+        },
+        {
+            id: 8,
+            title: "Chess Type Beat",
+            artist: "TheVibeGuide",
+            album: "none",
+            cover: "https://i.scdn.co/image/ab67616d0000b27307ff9101b807094a8d95e472",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Rat%20Dance%20Song%20(Chess%20Type%20Beat).mp3",
+            duration: "4:18"
+        },
+        {
+            id: 9,
+            title: "KSI - Thick Of It",
+            artist: "KSI",
+            album: "Metropolitan",
+            cover: "https://i1.sndcdn.com/artworks-8LPbcMKyqu1ZCd87-2AfrRg-t500x500.jpg",
+            mp3: "https://samplelib.com/lib/preview/mp3/sample-12s.mp3",
+            duration: "3:39"
+        },
+        {
+            id: 10,
+            title: "Amnesia",
+            artist: "Euphoric Brothers",
+            album: "none",
+            cover: "https://images.unsplash.com/photo-1502657877623-f66bf489d236?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVkJTIwc3VucmlzZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Amnesia%20-%20Official%20Music%20Video%20(from%20Garten%20of%20Banban)%20%20Lyrics.mp3",
+            duration: "4:22"
+        },
+		{
+            id: 11,
+            title: "A.P.T.",
+            artist: "Bruno Mars",
+            album: "none",
+            cover: "https://static.wikia.nocookie.net/blackpink/images/8/85/APT..png/revision/latest/thumbnail/width/360/height/450?cb=20241226164732&path-prefix=pl",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/ROSE%20&%20Bruno%20Mars%20-%20APT.%20(Official%20Music%20Video).mp3",
+            duration: "4:22"
+        },
+		{
+            id: 12,
+            title: "JOHN DOE - FORSAKEN OST",
+            artist: "Forsaken",
+            album: "FORSAKEN - OST",
+            cover: "https://i1.sndcdn.com/artworks-YiQqOyBBdNHy2lKt-HXnIJg-t500x500.jpg",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Forsaken%20%20John%20Doe%20Terror%20Radius%20Theme.mp3",
+            duration: "4:22"
+        },
+		{
+            id: 13,
+            title: "Jeff's Jingle",
+            artist: "LSplash",
+            album: "Roblox Doors - OST",
+            cover: "https://static.wikia.nocookie.net/doors-game/images/b/b5/Jeffyhappymines.png/revision/latest/scale-to-width-down/250?cb=20241124052546",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20ORIGINAL%20SOUNDTRACK%20VOL.%202%20-%20Jeff's%20Jingle.mp3",
+            duration: "4:22"
+        },
+		{
+            id: 14,
+            title: "BLUUDUD - FORSAKEN OST",
+            artist: "Forsaken",
+            album: "FORSAKEN - OST",
+            cover: "https://i1.sndcdn.com/artworks-kOqHIJxqsXG3YyYG-ytTXcA-t500x500.jpg",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/bluudude%20chase%20track%20EXTENSION%20FLP%20(Forsaken).mp3",
+            duration: "4:22"
+        },
+		{
+            id: 15,
+            title: "Ready OR Not",
+            artist: "LSplash",
+            album: "Roblox Doors - OST",
+            cover: "https://i1.sndcdn.com/artworks-zIVTRuPLOIl9oo8e-RJJ7pg-t500x500.jpg",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20ORIGINAL%20SOUNDTRACK%20VOL.%202%20-%20Jeff's%20Jingle.mp3",
+            duration: "4:22"
+        },
+				{
+            id: 13,
+            title: "Jeff's Jingle",
+            artist: "LSplash",
+            album: "Roblox Doors - OST",
+            cover: "https://static.wikia.nocookie.net/doors-game/images/b/b5/Jeffyhappymines.png/revision/latest/scale-to-width-down/250?cb=20241124052546",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20ORIGINAL%20SOUNDTRACK%20VOL.%202%20-%20Jeff's%20Jingle.mp3",
+            duration: "4:22"
+        },
+    ],
+    
+    playlists: [],
+    
+    albums: [
+        {
+            id: 1,
+            name: "Roblox Doors - OST",
+            artist: "LSplash",
+            cover: "https://static.wikia.nocookie.net/roblox-doors/images/c/ca/DoorsIcon3.png/revision/latest?cb=20231125033629",
+            songs: [2,6,13]
+        },
+		{
+            id: 2,
+            name: "FORSAKEN - OST",
+            artist: "Forsaken",
+            cover: "https://static.wikia.nocookie.net/robloxforsaken/images/e/e6/Site-logo.png/revision/latest?cb=20241231033031",
+            songs: [3,12]
+        },
+		{
+            id: 3,
+            name: "A Minecraft Movie",
+            artist: "Minecraft",
+            cover: "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2025/02/minecraft_the_movie_ver6_xlg.jpg",
+            songs: [4]
+        },
+    ],
+    
+    artists: [
+        {
+            id: 1,
+            name: "LSplash",
+            cover: "https://i.scdn.co/image/ab6761610000e5eb4de95f4daada83eedf6019b8",
+            songs: [2,6,13]
+        },
+        {
+            id: 2,
+            name: "Forsaken",
+            cover: "https://discord.do/wp-content/uploads/2025/02/Forsaken-Roblox-Discord-server.jpg",
+            songs: [3,12]
+        },
+        {
+            id: 3,
+            name: "Minecraft",
+            cover: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Mojang_Studios_Logo_%282020%2C_icon%29.svg",
+            songs: [4]
+        },
+        {
+            id: 4,
+            name: "Pharrel Williams",
+            cover: "https://hips.hearstapps.com/hmg-prod/images/gettyimages-645657836-1.jpg",
+            songs: [5]
+        },
+		{
+            id: 5,
+            name: "The Foundation RBLX",
+            cover: "https://static.wikia.nocookie.net/the-official-doors-floor-2-fanmade/images/e/ef/Foundationicon.png/revision/latest/thumbnail/width/360/height/360?cb=20250225200710",
+            songs: [7]
+        },
+		{
+            id: 6,
+            name: "TheVibeGuide",
+            cover: "https://yt3.ggpht.com/kbaAK-ukMvwCfFTbo77kvDl2OvmRSgZIKUsitdGYWSn3vsEBqi0MyKfgp00scfb4Yn30tTWTfQ=s48-c-k-c0x00ffffff-no-rj",
+            songs: [8]
+        },
+		{
+            id: 7,
+            name: "KSI",
+            cover: "https://i.scdn.co/image/ab6761610000e5ebcb4ae963f0c01900f3e17712",
+            songs: [9]
+        },
+		{
+			id: 8,
+			name: "Euphoric Brothers",
+			cover: "https://yt3.googleusercontent.com/uhMXHGmsbH1iAHgDdYxNhqNbYFhR1XRhceSYW5P8WB7KcwzRaC1LU5iopCSLHb_JQUp51ulKJQ=s900-c-k-c0x00ffffff-no-rj",
+			songs: [10]
+		},
+    ]
+};
