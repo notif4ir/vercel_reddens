@@ -141,7 +141,7 @@ const musicData = {
             artist: "Juice WRLD",
             album: "none",
             cover: "https://m.media-amazon.com/images/M/MV5BYWIwNjc5Y2UtYmY0Zi00YzQ3LWIzZDctZWRlODI1OGVjNDA3XkEyXkFqcGc@._V1_QL75_UY190_CR74,0,190,190_.jpg",
-            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20FLOOR%202%20Roblox%20OST_%20Ready%20or%20Not.mp3",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Juice%20Wrld%20-%20Lucid%20Dreams%20(Lyrics).mp3",
             duration: "4:22"
         },
 		{
