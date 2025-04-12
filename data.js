@@ -197,7 +197,7 @@ const musicData = {
             name: "FORSAKEN - OST",
             artist: "Forsaken",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20113449.png",
-            songs: [3,12,19]
+            songs: [3,12,19,20]
         },
 		{
             id: 3,
@@ -219,7 +219,7 @@ const musicData = {
             id: 2,
             name: "Forsaken",
             cover: "https://discord.do/wp-content/uploads/2025/02/Forsaken-Roblox-Discord-server.jpg",
-            songs: [3,12]
+            songs: [3,12,19,20]
         },
         {
             id: 3,
