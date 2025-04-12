@@ -147,7 +147,7 @@ const musicData = {
 		{
             id: 17,
             title: "Rock Bottom",
-            artist: "LSplash",
+            artist: "The Foundation RBLX",
             album: "Roblox Doors - OST",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20120008.png",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Rock%20Bottom%20(Full%20Version).mp3",
@@ -162,6 +162,24 @@ const musicData = {
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Jeff's%20Jazzy%20Jingle.mp3",
             duration: "4:22"
         },
+		{
+            id: 19,
+            title: "Close TO ME",
+            artist: "Forsaken",
+            album: "FORSAKEN - OST",
+            cover: "https://tiermaker.com/images//media/template_images/2024/17797426/forsaken-roblox-ost-17797426/zzzzz-1743455297close-to-me.png",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BANNIHILATION%20John%20Doe%20vs.%20FRIEND%20Elliot%5D%20CLOSE%20TO%20ME%20(Red%20Moonrise%20Mix)%20%5BForsaken%20OST%5D.mp3",
+            duration: "4:22"
+        },
+		{
+            id: 20,
+            title: "Smile!",
+            artist: "Forsaken",
+            album: "FORSAKEN - OST",
+            cover: "https://i1.sndcdn.com/artworks-LHWIzBvV8bJI6vo5-9h7c2g-t500x500.jpg",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/SMILE%20(FORSAKEN%20OFFICIAL).mp3",
+            duration: "4:22"
+        },
     ],
     
     playlists: [],
@@ -172,14 +190,14 @@ const musicData = {
             name: "Roblox Doors - OST",
             artist: "LSplash",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20115556.png",
-            songs: [2,6,13,17]
+            songs: [2,6,13]
         },
 		{
             id: 2,
             name: "FORSAKEN - OST",
             artist: "Forsaken",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20113449.png",
-            songs: [3,12]
+            songs: [3,12,19]
         },
 		{
             id: 3,
@@ -195,7 +213,7 @@ const musicData = {
             id: 1,
             name: "LSplash",
             cover: "https://i.scdn.co/image/ab6761610000e5eb4de95f4daada83eedf6019b8",
-            songs: [2,6,13,17]
+            songs: [2,6,13]
         },
         {
             id: 2,
@@ -225,7 +243,7 @@ const musicData = {
             id: 5,
             name: "The Foundation RBLX",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20113252.png",
-            songs: [7,18]
+            songs: [7,18,17]
         },
 		{
             id: 6,
