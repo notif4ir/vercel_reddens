@@ -207,6 +207,51 @@ const musicData = {
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/download.mp3",
             duration: "auto"
         },
+		{
+            id: 24,
+            title: "Haggstrom - C418 Minecraft",
+            artist: "Minecraft",
+            album: "Minecraft",
+            cover: "https://a.allegroimg.com/s512/11688d/0f0ec28d479d899a9c58fa839a2d/MINECRAFT-JAVA-BEDROCK-EDITION-GRA-PC-POLSKA-WERSJA-KLUCZ",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/C418%20-%20Haggstrom%20-%20Minecraft%20Volume%20Alpha.mp3",
+            duration: "auto"
+        },
+		{
+            id: 25,
+            title: "It's Raining Tacos!",
+            artist: "undefined",
+            album: "none",
+            cover: "https://pm1.aminoapps.com/7381/68fac732840e0b334041bc1a91d606416b43cb84r1-633-324v2_128.jpg",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/ITS%20RAINING%20TACOS!%20(Roblox%20Music%20Video).mp3",
+            duration: "auto"
+        },
+		{
+            id: 26,
+            title: "Dive - A One",
+            artist: "undefined",
+            album: "none",
+            cover: "https://preview.redd.it/kj-kj-stickman-saga-runs-the-anime-videogame-gauntlet-v0-1gmz028x1npd1.jpg?width=383&format=pjpg&auto=webp&s=7cf19baa7daacca59aa512f33f3d36bbf8c1310e",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Dive!!%20%20A-One%20(The%20Strongest%20Battlegrounds%20KJ's%20Official%20Theme%20Song).mp3",
+            duration: "auto"
+        },
+		{
+            id: 27,
+            title: "Salinewin.exe [LOUD]",
+            artist: "undefined",
+            album: "none",
+            cover: "https://github.com/notif4ir/reddins_database/blob/main/Zrzut%20ekranu%202025-04-12%20182043.png?raw=true",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Salinewin.exe%20V2%20virus%20beat%20(LOUD).mp3",
+            duration: "auto"
+        },
+		{
+		    id: 28,
+            title: "FNAF Puppet's Music Box",
+            artist: "Scott Cawthon",
+            album: "none",
+            cover: "https://i.ytimg.com/vi/S8Dq7a3c45o/hq2.jpg",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/FNAF%202_%20The%20Puppet%20music%20box.mp3",
+            duration: "auto"
+        },
 		/*
 		{
             id: 20,
@@ -244,6 +289,13 @@ const musicData = {
             cover: "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2025/02/minecraft_the_movie_ver6_xlg.jpg",
             songs: [4]
         },
+		{
+            id: 4,
+            name: "Minecraft",
+            artist: "Minecraft",
+            cover: "https://a.allegroimg.com/s512/11688d/0f0ec28d479d899a9c58fa839a2d/MINECRAFT-JAVA-BEDROCK-EDITION-GRA-PC-POLSKA-WERSJA-KLUCZ",
+            songs: [24]
+        },
     ],
     
     artists: [
@@ -276,6 +328,12 @@ const musicData = {
 			name: "Juice WRLD",
 			cover: "https://i.scdn.co/image/ab6761610000e5eb23a60030944f7853c21565ef",
 			songs: [16]
+		},
+		{
+			id: 8,
+			name: "Scott Cawthon",
+			cover: "https://static.wikia.nocookie.net/five-nights-at-freddys73/images/6/6d/Scottcloseup.png/revision/latest/thumbnail/width/360/height/360?cb=20180310011838",
+			songs: [28]
 		},
 		{
             id: 5,
