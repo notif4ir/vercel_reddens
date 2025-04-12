@@ -135,6 +135,33 @@ const musicData = {
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20FLOOR%202%20Roblox%20OST_%20Ready%20or%20Not.mp3",
             duration: "4:22"
         },
+		{
+            id: 16,
+            title: "Lucid Dreams",
+            artist: "Juice WRLD",
+            album: "none",
+            cover: "https://m.media-amazon.com/images/M/MV5BYWIwNjc5Y2UtYmY0Zi00YzQ3LWIzZDctZWRlODI1OGVjNDA3XkEyXkFqcGc@._V1_QL75_UY190_CR74,0,190,190_.jpg",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20FLOOR%202%20Roblox%20OST_%20Ready%20or%20Not.mp3",
+            duration: "4:22"
+        },
+		{
+            id: 17,
+            title: "Rock Bottom",
+            artist: "LSplash",
+            album: "Roblox Doors - OST",
+            cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20120008.png",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Rock%20Bottom%20(Full%20Version).mp3",
+            duration: "4:22"
+        },		
+		{
+            id: 18,
+            title: "Jeff's Jazzy Jingle",
+            artist: "The Foundation RBLX",
+            album: "none",
+            cover: "https://github.com/notif4ir/reddins_database/blob/main/Zrzut%20ekranu%202025-04-12%20120247.png?raw=true",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Jeff's%20Jazzy%20Jingle.mp3",
+            duration: "4:22"
+        },
     ],
     
     playlists: [],
@@ -145,7 +172,7 @@ const musicData = {
             name: "Roblox Doors - OST",
             artist: "LSplash",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20115556.png",
-            songs: [2,6,13]
+            songs: [2,6,13,17]
         },
 		{
             id: 2,
@@ -168,7 +195,7 @@ const musicData = {
             id: 1,
             name: "LSplash",
             cover: "https://i.scdn.co/image/ab6761610000e5eb4de95f4daada83eedf6019b8",
-            songs: [2,6,13]
+            songs: [2,6,13,17]
         },
         {
             id: 2,
@@ -189,10 +216,16 @@ const musicData = {
             songs: [5]
         },
 		{
+			id: 8,
+			name: "Juice WRLD",
+			cover: "https://i.scdn.co/image/ab6761610000e5eb23a60030944f7853c21565ef",
+			songs: [16]
+		},
+		{
             id: 5,
             name: "The Foundation RBLX",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20113252.png",
-            songs: [7]
+            songs: [7,18]
         },
 		{
             id: 6,
