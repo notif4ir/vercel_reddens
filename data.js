@@ -59,7 +59,7 @@ const musicData = {
             title: "Calm Before The Storm",
             artist: "The Foundation RBLX",
             album: "none",
-            cover: "https://static.wikia.nocookie.net/the-official-doors-floor-2-fanmade/images/e/ef/Foundationicon.png/revision/latest/thumbnail/width/360/height/360?cb=20250225200710",
+            cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20113252.png",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Calm%20Before%20the%20Storm.mp3",
             duration: "3:52"
         },
@@ -135,15 +135,6 @@ const musicData = {
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20FLOOR%202%20Roblox%20OST_%20Ready%20or%20Not.mp3",
             duration: "4:22"
         },
-				{
-            id: 13,
-            title: "Jeff's Jingle",
-            artist: "LSplash",
-            album: "Roblox Doors - OST",
-            cover: "https://thumbnails.vrclist.com/358346.png",
-            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20ORIGINAL%20SOUNDTRACK%20VOL.%202%20-%20Jeff's%20Jingle.mp3",
-            duration: "4:22"
-        },
     ],
     
     playlists: [],
@@ -200,7 +191,7 @@ const musicData = {
 		{
             id: 5,
             name: "The Foundation RBLX",
-            cover: "https://static.wikia.nocookie.net/the-official-doors-floor-2-fanmade/images/e/ef/Foundationicon.png/revision/latest/thumbnail/width/360/height/360?cb=20250225200710",
+            cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20113252.png",
             songs: [7]
         },
 		{
