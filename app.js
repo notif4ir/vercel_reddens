@@ -26,6 +26,8 @@ const loopBtn = document.getElementById('loop-btn');
 const themeSelect = document.querySelector('select[name="theme"]');
 const likedTab = document.getElementById('liked-tab');
 const likedContent = document.getElementById('liked-content');
+const audioQualitySelect = document.querySelector('select.setting-select');
+const profileNameElement = document.querySelector('.setting-value:first-of-type');
 
 // App State
 let currentSong = null;
@@ -34,11 +36,13 @@ let currentPlaylist = [];
 let currentIndex = 0;
 let isLooping = false;
 let db;
-let currentTheme = 'defaultTheme';
+let currentTheme = 'dark';
+let profileName = 'User123';
+let audioQuality = 'High';
 
 // Initialize IndexedDB
 function initIndexedDB() {
-    const request = indexedDB.open('ReddensDB', 2);
+    const request = indexedDB.open('ReddensDB', 3);
     
     request.onerror = function(event) {
         console.error('IndexedDB error:', event.target.error);
@@ -69,6 +73,11 @@ function initIndexedDB() {
         if (!db.objectStoreNames.contains('settings')) {
             db.createObjectStore('settings', { keyPath: 'key' });
         }
+        
+        // Create object store for profile
+        if (!db.objectStoreNames.contains('profile')) {
+            db.createObjectStore('profile', { keyPath: 'key' });
+        }
     };
     
     request.onsuccess = function(event) {
@@ -76,6 +85,7 @@ function initIndexedDB() {
         // After DB is initialized, load user data
         loadUserPlaylists();
         loadSettings();
+        loadProfile();
         loadRecentlyPlayed();
         loadMostPlayed();
         loadLikedSongs();
@@ -88,9 +98,10 @@ function loadSettings() {
     
     const transaction = db.transaction(['settings'], 'readonly');
     const store = transaction.objectStore('settings');
-    const request = store.get('theme');
     
-    request.onsuccess = function(event) {
+    // Load theme
+    const themeRequest = store.get('theme');
+    themeRequest.onsuccess = function(event) {
         const setting = event.target.result;
         if (setting) {
             currentTheme = setting.value;
@@ -101,9 +112,60 @@ function loadSettings() {
             }
         } else {
             // If no theme setting exists, create one with the default theme
-            saveThemeSetting('defaultTheme');
+            saveThemeSetting('light');
         }
     };
+    
+    // Load audio quality
+    const qualityRequest = store.get('audioQuality');
+    qualityRequest.onsuccess = function(event) {
+        const setting = event.target.result;
+        if (setting) {
+            audioQuality = setting.value;
+            if (audioQualitySelect) {
+                audioQualitySelect.value = audioQuality;
+            }
+        } else {
+            // If no audio quality setting exists, create with default (High)
+            saveAudioQualitySetting('High');
+        }
+    };
+}
+
+// Load profile data
+function loadProfile() {
+    if (!db) return;
+    
+    const transaction = db.transaction(['profile'], 'readonly');
+    const store = transaction.objectStore('profile');
+    const request = store.get('name');
+    
+    request.onsuccess = function(event) {
+        const profile = event.target.result;
+        if (profile) {
+            profileName = profile.value;
+            if (profileNameElement) {
+                profileNameElement.textContent = profileName;
+            }
+        } else {
+            // Create default profile
+            saveProfileName('User123');
+        }
+    };
+}
+
+// Save profile name
+function saveProfileName(name) {
+    if (!db) return;
+    
+    const transaction = db.transaction(['profile'], 'readwrite');
+    const store = transaction.objectStore('profile');
+    store.put({ key: 'name', value: name });
+    
+    profileName = name;
+    if (profileNameElement) {
+        profileNameElement.textContent = name;
+    }
 }
 
 // Save theme setting to IndexedDB
@@ -118,6 +180,35 @@ function saveThemeSetting(theme) {
     applyTheme(theme);
 }
 
+// Save audio quality setting
+function saveAudioQualitySetting(quality) {
+    if (!db) return;
+    
+    const transaction = db.transaction(['settings'], 'readwrite');
+    const store = transaction.objectStore('settings');
+    store.put({ key: 'audioQuality', value: quality });
+    
+    audioQuality = quality;
+    applyAudioQuality(quality);
+}
+
+// Apply audio quality setting
+function applyAudioQuality(quality) {
+    // In a real app, this would adjust bitrate, sample rate, etc.
+    // For our demo, we'll simulate by adjusting volume/playback rate
+    switch(quality) {
+        case 'Low':
+            audioPlayer.volume = 0.7;
+            break;
+        case 'Medium':
+            audioPlayer.volume = 0.85;
+            break;
+        case 'High':
+            audioPlayer.volume = 1.0;
+            break;
+    }
+}
+
 // Apply theme to the document
 function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
@@ -125,7 +216,10 @@ function applyTheme(theme) {
 
 // Load Recently Played from IndexedDB
 function loadRecentlyPlayed() {
-    if (!db) return;
+    if (!db) {
+        setTimeout(loadRecentlyPlayed, 1000); // Try again in 1 second
+        return;
+    }
     
     const transaction = db.transaction(['playHistory'], 'readonly');
     const store = transaction.objectStore('playHistory');
@@ -138,23 +232,25 @@ function loadRecentlyPlayed() {
     request.onsuccess = function(event) {
         const cursor = event.target.result;
         if (cursor && recentlyPlayed.length < 5) {
-            recentlyPlayed.push(cursor.value);
+            const song = musicData.songs.find(s => s.id === cursor.value.songId);
+            if (song) {
+                recentlyPlayed.push(song);
+            }
             cursor.continue();
         } else {
             // Display recently played songs
-            const recentSongs = recentlyPlayed.map(record => 
-                musicData.songs.find(song => song.id === record.songId)
-            ).filter(Boolean);
-            
             const recentlyPlayedCarousel = document.querySelector('.section:nth-of-type(1) .carousel');
-            populateCarousel(recentlyPlayedCarousel, recentSongs);
+            populateCarousel(recentlyPlayedCarousel, recentlyPlayed);
         }
     };
 }
 
 // Load Most Played from IndexedDB
 function loadMostPlayed() {
-    if (!db) return;
+    if (!db) {
+        setTimeout(loadMostPlayed, 1000); // Try again in 1 second
+        return;
+    }
     
     const transaction = db.transaction(['playHistory'], 'readonly');
     const store = transaction.objectStore('playHistory');
@@ -167,16 +263,15 @@ function loadMostPlayed() {
     request.onsuccess = function(event) {
         const cursor = event.target.result;
         if (cursor && mostPlayed.length < 5) {
-            mostPlayed.push(cursor.value);
+            const song = musicData.songs.find(s => s.id === cursor.value.songId);
+            if (song) {
+                mostPlayed.push(song);
+            }
             cursor.continue();
         } else {
             // Display most played songs
-            const topSongs = mostPlayed.map(record => 
-                musicData.songs.find(song => song.id === record.songId)
-            ).filter(Boolean);
-            
             const mostPlayedCarousel = document.querySelector('.section:nth-of-type(2) .carousel');
-            populateCarousel(mostPlayedCarousel, topSongs);
+            populateCarousel(mostPlayedCarousel, mostPlayed);
         }
     };
 }
@@ -206,7 +301,23 @@ function updatePlayHistory(songId) {
                 lastPlayed: now
             });
         }
+        
+        // Refresh the carousels
+        loadRecentlyPlayed();
+        loadMostPlayed();
     };
+}
+
+// Detect audio duration
+function detectAudioDuration(url, callback) {
+    const audio = new Audio();
+    audio.addEventListener('loadedmetadata', function() {
+        const duration = audio.duration;
+        const minutes = Math.floor(duration / 60);
+        const seconds = Math.floor(duration % 60);
+        callback(`${minutes}:${seconds < 10 ? '0' + seconds : seconds}`);
+    });
+    audio.src = url;
 }
 
 // Load liked songs from IndexedDB
@@ -299,6 +410,15 @@ function initApp() {
     populateHomeScreen();
     populateLibrary();
     setupEventListeners();
+    
+    // Auto-detect durations for songs
+    musicData.songs.forEach(song => {
+        if (song.duration === "auto") {
+            detectAudioDuration(song.mp3, (duration) => {
+                song.duration = duration;
+            });
+        }
+    });
 }
 
 // Load user playlists from IndexedDB
@@ -326,6 +446,42 @@ function updatePlaylistsDisplay(playlists) {
     const playlistsContainer = document.querySelector('#playlists-content .grid-container');
     playlistsContainer.innerHTML = '';
     
+    // Add import button
+    const importContainer = document.createElement('div');
+    importContainer.className = 'create-playlist';
+    importContainer.style.display = 'flex';
+    importContainer.style.justifyContent = 'space-between';
+    importContainer.innerHTML = `
+        <input type="file" id="playlist-file-input" class="file-input" accept=".rPlaylist">
+        <button class="import-playlist-btn">Import .rPlaylist</button>
+    `;
+    
+    const importBtn = importContainer.querySelector('.import-playlist-btn');
+    const fileInput = importContainer.querySelector('#playlist-file-input');
+    
+    importBtn.addEventListener('click', () => {
+        fileInput.click();
+    });
+    
+    fileInput.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                try {
+                    const playlistData = JSON.parse(event.target.result);
+                    importPlaylist(playlistData);
+                } catch (error) {
+                    alert('Invalid playlist file');
+                    console.error('Error importing playlist:', error);
+                }
+            };
+            reader.readAsText(file);
+        }
+    });
+    
+    playlistsContainer.appendChild(importContainer);
+    
     if (playlists.length === 0) {
         const emptyMessage = document.createElement('div');
         emptyMessage.className = 'empty-playlists-message';
@@ -349,13 +505,76 @@ function updatePlaylistsDisplay(playlists) {
     });
 }
 
+// Import a playlist from .rPlaylist file
+function importPlaylist(playlistData) {
+    if (!db) return;
+    
+    // Validate playlist data
+    if (!playlistData.name || !Array.isArray(playlistData.songs)) {
+        alert('Invalid playlist format');
+        return;
+    }
+    
+    // Create a new playlist object
+    const newPlaylist = {
+        name: playlistData.name,
+        creator: 'Imported',
+        songs: playlistData.songs,
+        cover: playlistData.cover || 'https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwbXVzaWN8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
+        isUserCreated: true
+    };
+    
+    // Add to IndexedDB
+    const transaction = db.transaction(['playlists'], 'readwrite');
+    const store = transaction.objectStore('playlists');
+    const request = store.add(newPlaylist);
+    
+    request.onsuccess = function() {
+        alert(`Playlist "${playlistData.name}" imported successfully!`);
+        loadUserPlaylists();
+    };
+    
+    request.onerror = function(event) {
+        alert('Error importing playlist');
+        console.error('Error importing playlist:', event.target.error);
+    };
+}
+
+// Export a playlist to .rPlaylist file
+function exportPlaylist(playlist) {
+    // Create playlist export data
+    const exportData = {
+        name: playlist.name,
+        songs: playlist.songs,
+        cover: playlist.cover
+    };
+    
+    // Convert to JSON and create blob
+    const jsonData = JSON.stringify(exportData);
+    const blob = new Blob([jsonData], { type: 'application/json' });
+    
+    // Create download link
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${playlist.name.replace(/\s+/g, '_')}.rPlaylist`;
+    
+    // Trigger download
+    document.body.appendChild(a);
+    a.click();
+    
+    // Cleanup
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+
 // Create a new playlist
 function createNewPlaylist(name) {
     if (!db) return;
     
     const newPlaylist = {
         name,
-        creator: 'You',
+        creator: profileName,
         songs: [],
         cover: 'https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwbXVzaWN8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
         isUserCreated: true
@@ -653,8 +872,7 @@ function openPlaylist(playlist) {
     const playlistTitle = playlistScreen.querySelector('.playlist-title');
     const playlistCreator = playlistScreen.querySelector('.playlist-creator');
     const playlistSongs = playlistScreen.querySelector('.playlist-songs');
-    const playAllBtn = playlistScreen.querySelector('.play-all-btn');
-    const deletePlaylistBtn = playlistScreen.querySelector('.delete-playlist-btn');
+    const playlistActions = playlistScreen.querySelector('.playlist-actions');
     
     // Store playlist ID in the screen element for reference
     playlistScreen.dataset.playlistId = playlist.id;
@@ -668,13 +886,30 @@ function openPlaylist(playlist) {
     // Clear and populate songs
     playlistSongs.innerHTML = '';
     
+    // Update action buttons - add share button
+    playlistActions.innerHTML = `
+        <button class="red-btn play-all-btn">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            Play All
+        </button>
+        <button class="red-btn delete-playlist-btn">Delete Playlist</button>
+        <div class="playlist-more-menu">
+            <button class="more-button">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="currentColor"/>
+                </svg>
+            </button>
+            <div class="playlist-menu">
+                <div class="playlist-menu-item" id="export-playlist">Download .rPlaylist</div>
+            </div>
+        </div>
+    `;
+    
     // Get songs in playlist
     const songs = playlist.songs.map(id => musicData.songs.find(song => song.id === id)).filter(Boolean);
     
-    // Always show delete button since all playlists are user-created now
-    deletePlaylistBtn.style.display = 'block';
-    
     // Setup play all button
+    const playAllBtn = playlistActions.querySelector('.play-all-btn');
     playAllBtn.onclick = () => {
         if (songs.length > 0) {
             currentPlaylist = playlist.songs;
@@ -684,11 +919,34 @@ function openPlaylist(playlist) {
     };
     
     // Setup delete playlist button
+    const deletePlaylistBtn = playlistActions.querySelector('.delete-playlist-btn');
     deletePlaylistBtn.onclick = () => {
         if (confirm(`Are you sure you want to delete "${playlist.name}"?`)) {
             deletePlaylist(playlist.id);
         }
     };
+    
+    // Setup more menu
+    const moreButton = playlistActions.querySelector('.more-button');
+    const playlistMenu = playlistActions.querySelector('.playlist-menu');
+    
+    moreButton.addEventListener('click', () => {
+        playlistMenu.classList.toggle('active');
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!moreButton.contains(e.target) && !playlistMenu.contains(e.target)) {
+            playlistMenu.classList.remove('active');
+        }
+    });
+    
+    // Setup export playlist button
+    const exportPlaylistBtn = document.getElementById('export-playlist');
+    exportPlaylistBtn.addEventListener('click', () => {
+        exportPlaylist(playlist);
+        playlistMenu.classList.remove('active');
+    });
     
     if (songs.length === 0) {
         playlistSongs.innerHTML = `
@@ -963,6 +1221,9 @@ function playSong(songId) {
     currentArtistElement.textContent = song.artist;
     currentAlbumArt.src = song.cover;
     
+    // Apply audio quality
+    applyAudioQuality(audioQuality);
+    
     // Add click handler to artist name in now playing
     currentArtistElement.classList.add('artist-link');
     currentArtistElement.dataset.artist = song.artist;
@@ -1165,6 +1426,14 @@ function setupEventListeners() {
         });
     }
     
+    // Audio quality setting
+    if (audioQualitySelect) {
+        audioQualitySelect.addEventListener('change', () => {
+            const quality = audioQualitySelect.value;
+            saveAudioQualitySetting(quality);
+        });
+    }
+    
     // Player controls
     playBtn.addEventListener('click', togglePlay);
     nextBtn.addEventListener('click', playNext);
@@ -1197,6 +1466,17 @@ function setupEventListeners() {
             createNewPlaylist(playlistName.trim());
         }
     });
+    
+    // Edit profile button
+    const editProfileBtn = document.querySelector('.edit-profile-btn');
+    if (editProfileBtn) {
+        editProfileBtn.addEventListener('click', () => {
+            const newName = prompt('Enter your profile name:', profileName);
+            if (newName && newName.trim()) {
+                saveProfileName(newName.trim());
+            }
+        });
+    }
     
     // Search input
     searchInput.addEventListener('input', () => {
