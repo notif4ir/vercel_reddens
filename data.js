@@ -14,7 +14,7 @@ const musicData = {
             title: "OH DAM",
             artist: "LSplash",
             album: "Roblox Doors - OST",
-            cover: "https://static.wikia.nocookie.net/doors-game/images/5/5d/Volume_4.jpeg/revision/latest/smart/width/250/height/250?cb=20240921194807",
+            cover: "https://i1.sndcdn.com/artworks-M4ZcYSSgFhfz1D1U-sp9nhQ-t500x500.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20ORIGINAL%20SOUNDTRACK%20VOL.%204%20-%20Oh%20Dam.mp3",
             duration: "4:12"
         },
@@ -78,7 +78,7 @@ const musicData = {
             artist: "KSI",
             album: "Metropolitan",
             cover: "https://i1.sndcdn.com/artworks-8LPbcMKyqu1ZCd87-2AfrRg-t500x500.jpg",
-            mp3: "https://samplelib.com/lib/preview/mp3/sample-12s.mp3",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/KSI%20-%20Thick%20Of%20It%20(feat.%20Trippie%20Redd)%20%5BOfficial%20Lyric%20Video%5D.mp3",
             duration: "3:39"
         },
         {
@@ -95,7 +95,7 @@ const musicData = {
             title: "A.P.T.",
             artist: "Bruno Mars",
             album: "none",
-            cover: "https://static.wikia.nocookie.net/blackpink/images/8/85/APT..png/revision/latest/thumbnail/width/360/height/450?cb=20241226164732&path-prefix=pl",
+            cover: "https://i1.sndcdn.com/artworks-az7nDtlExUZa7OyJ-zgeE1A-t500x500.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/ROSE%20&%20Bruno%20Mars%20-%20APT.%20(Official%20Music%20Video).mp3",
             duration: "4:22"
         },
@@ -132,7 +132,7 @@ const musicData = {
             artist: "LSplash",
             album: "Roblox Doors - OST",
             cover: "https://i1.sndcdn.com/artworks-zIVTRuPLOIl9oo8e-RJJ7pg-t500x500.jpg",
-            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20ORIGINAL%20SOUNDTRACK%20VOL.%202%20-%20Jeff's%20Jingle.mp3",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20FLOOR%202%20Roblox%20OST_%20Ready%20or%20Not.mp3",
             duration: "4:22"
         },
 				{
@@ -140,7 +140,7 @@ const musicData = {
             title: "Jeff's Jingle",
             artist: "LSplash",
             album: "Roblox Doors - OST",
-            cover: "https://static.wikia.nocookie.net/doors-game/images/b/b5/Jeffyhappymines.png/revision/latest/scale-to-width-down/250?cb=20241124052546",
+            cover: "https://thumbnails.vrclist.com/358346.png",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/DOORS%20ORIGINAL%20SOUNDTRACK%20VOL.%202%20-%20Jeff's%20Jingle.mp3",
             duration: "4:22"
         },
@@ -160,7 +160,7 @@ const musicData = {
             id: 2,
             name: "FORSAKEN - OST",
             artist: "Forsaken",
-            cover: "https://static.wikia.nocookie.net/robloxforsaken/images/e/e6/Site-logo.png/revision/latest?cb=20241231033031",
+            cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20113449.png",
             songs: [3,12]
         },
 		{
