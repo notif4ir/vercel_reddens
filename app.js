@@ -36,7 +36,7 @@ let currentPlaylist = [];
 let currentIndex = 0;
 let isLooping = false;
 let db;
-let currentTheme = 'dark';
+let currentTheme = 'light';
 let profileName = 'User123';
 let audioQuality = 'High';
 
@@ -239,8 +239,12 @@ function loadRecentlyPlayed() {
             cursor.continue();
         } else {
             // Display recently played songs
-            const recentlyPlayedCarousel = document.querySelector('.section:nth-of-type(1) .carousel');
-            populateCarousel(recentlyPlayedCarousel, recentlyPlayed);
+            const recentlyPlayedCarousel = document.getElementById('recently-played-carousel');
+            if (recentlyPlayedCarousel) {
+                populateCarousel(recentlyPlayedCarousel, recentlyPlayed);
+            } else {
+                console.error('Recently played carousel element not found');
+            }
         }
     };
 }
@@ -270,8 +274,12 @@ function loadMostPlayed() {
             cursor.continue();
         } else {
             // Display most played songs
-            const mostPlayedCarousel = document.querySelector('.section:nth-of-type(2) .carousel');
-            populateCarousel(mostPlayedCarousel, mostPlayed);
+            const mostPlayedCarousel = document.getElementById('most-played-carousel');
+            if (mostPlayedCarousel) {
+                populateCarousel(mostPlayedCarousel, mostPlayed);
+            } else {
+                console.error('Most played carousel element not found');
+            }
         }
     };
 }
@@ -1159,6 +1167,11 @@ function openScreen(screenName) {
 
 // Helper Functions
 function populateCarousel(carousel, items) {
+    if (!carousel) {
+        console.error('Carousel element is null or undefined');
+        return;
+    }
+    
     carousel.innerHTML = '';
     
     if (!items || items.length === 0) {
