@@ -347,7 +347,7 @@ const musicData = {
             title: "Here I Come",
             artist: "LSplash",
             album: "Roblox Doors - OST",
-            cover: "https://i.scdn.co/image/ab67616d0000b2735e7cc3fc0de935cb09d681b6",
+            cover: "https://i.scdn.co/image/ab67616d00001e020922009ba2c16e3ff212fb15",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/SpotiDown.App%20-%20Here%20I%20Come%20-%20LSPLASH.mp3",
             duration: "auto"
         },
@@ -356,7 +356,7 @@ const musicData = {
             title: "Unhinged",
             artist: "LSplash",
             album: "Roblox Doors - OST",
-            cover: "https://i.scdn.co/image/ab67616d0000b273e427154ba07871825a9ac721",
+            cover: "https://i.scdn.co/image/ab67616d00001e020922009ba2c16e3ff212fb15",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/SpotiDown.App%20-%20Unhinged%20-%20LSPLASH.mp3",
             duration: "auto"
         },
@@ -365,7 +365,7 @@ const musicData = {
             title: "Unhinged II",
             artist: "LSplash",
             album: "Roblox Doors - OST",
-            cover: "https://i.scdn.co/image/ab67616d0000b2737bfc4c0b432ec08b454116f2",
+            cover: "https://i.scdn.co/image/ab67616d00001e025fa2a20c3a4d85aca6159578",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/SpotiDown.App%20-%20Unhinged%20II%20-%20LSPLASH.mp3",
             duration: "auto"
         },
@@ -374,7 +374,7 @@ const musicData = {
             title: "Elevator Jam",
             artist: "LSplash",
             album: "Roblox Doors - OST",
-            cover: "https://i.scdn.co/image/ab67616d0000b2730f94342d82f1e6850d649ea9",
+            cover: "https://i.scdn.co/image/ab67616d00001e020922009ba2c16e3ff212fb15",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/SpotiDown.App%20-%20Elevator%20Jam%20-%20LSPLASH.mp3",
             duration: "auto"
         },
@@ -383,7 +383,7 @@ const musicData = {
             title: "Guiding Light",
             artist: "LSplash",
             album: "Roblox Doors - OST",
-            cover: "https://i1.sndcdn.com/artworks-VtRtqby5OVym-0-t500x500.jpg",
+            cover: "https://i.scdn.co/image/ab67616d00001e020922009ba2c16e3ff212fb15",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/SpotiDown.App%20-%20Guiding%20Light%20-%20LSPLASH.mp3",
             duration: "auto"
         },
