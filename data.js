@@ -252,6 +252,96 @@ const musicData = {
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/FNAF%202_%20The%20Puppet%20music%20box.mp3",
             duration: "auto"
         },
+		{
+		    id: 29,
+            title: "astigmatism",
+            artist: "kitz",
+            album: "none",
+            cover: "https://i.ytimg.com/vi/S8Dq7a3c45o/hq2.jpg",
+            mp3: "https://i.scdn.co/image/ab67616d0000b273633f2b947f60c360020dd6d1",
+            duration: "auto"
+        },
+		{
+		    id: 30,
+            title: "peripheral",
+            artist: "kitz",
+            album: "none",
+            cover: "https://i.scdn.co/image/ab67616d0000b273cf72ce32d3b164a5d9316fa7",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20peripheral.mp3",
+            duration: "auto"
+        },
+		{
+		    id: 31,
+            title: "cheap liqour",
+            artist: "Ericdoa",
+            album: "none",
+            cover: "https://i.scdn.co/image/ab67616d0000b2735e7cc3fc0de935cb09d681b6",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20cheap%20liquor.mp3",
+            duration: "auto"
+        },
+		{
+		    id: 32,
+            title: "heather",
+            artist: "Ericdoa",
+            album: "none",
+            cover: "https://i.scdn.co/image/ab67616d0000b273e427154ba07871825a9ac721",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20heather.mp3",
+            duration: "auto"
+        },
+		{
+		    id: 33,
+            title: "hang tight",
+            artist: "Cybertrash",
+            album: "none",
+            cover: "https://i.scdn.co/image/ab67616d0000b2737bfc4c0b432ec08b454116f2",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20hang%20tight.mp3",
+            duration: "auto"
+        },
+		{
+		    id: 34,
+            title: "twisted",
+            artist: "MO$h",
+            album: "none",
+            cover: "https://i.scdn.co/image/ab67616d0000b2730f94342d82f1e6850d649ea9",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20twisted.mp3",
+            duration: "auto"
+        },
+		{
+		    id: 35,
+            title: "dancinwithsomebawdy",
+            artist: "Ericdoa",
+            album: "none",
+            cover: "https://i1.sndcdn.com/artworks-VtRtqby5OVym-0-t500x500.jpg",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20dancinwithsomebawdy.mp3",
+            duration: "auto"
+        },
+		{
+		    id: 36,
+            title: "stepback",
+            artist: "Nicopatty",
+            album: "none",
+            cover: "https://i.scdn.co/image/ab67616d0000b27390b39826a0161743a89a7aff",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20stepback.mp3",
+            duration: "auto"
+        },
+		{
+		    id: 37,
+            title: "kensuke",
+            artist: "Nicopatty",
+            album: "none",
+            cover: "https://i.scdn.co/image/ab67616d0000b273a704f447fbba5183aeeb11f0",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20kensuke.mp3",
+            duration: "auto"
+        },
+		{
+		    id: 38,
+            title: "Grand Piano",
+            artist: "Nicopatty",
+            album: "none",
+            cover: "https://i.scdn.co/image/ab67616d00001e02199a52950442425d19d81aa8",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20grand%20piano.mp3",
+            duration: "auto"
+        },
 		/*
 		{
             id: 20,
@@ -324,18 +414,6 @@ const musicData = {
             songs: [5]
         },
 		{
-			id: 8,
-			name: "Juice WRLD",
-			cover: "https://i.scdn.co/image/ab6761610000e5eb23a60030944f7853c21565ef",
-			songs: [16]
-		},
-		{
-			id: 8,
-			name: "Scott Cawthon",
-			cover: "https://static.wikia.nocookie.net/five-nights-at-freddys73/images/6/6d/Scottcloseup.png/revision/latest/thumbnail/width/360/height/360?cb=20180310011838",
-			songs: [28]
-		},
-		{
             id: 5,
             name: "The Foundation RBLX",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20113252.png",
@@ -358,6 +436,48 @@ const musicData = {
 			name: "Euphoric Brothers",
 			cover: "https://yt3.googleusercontent.com/uhMXHGmsbH1iAHgDdYxNhqNbYFhR1XRhceSYW5P8WB7KcwzRaC1LU5iopCSLHb_JQUp51ulKJQ=s900-c-k-c0x00ffffff-no-rj",
 			songs: [10]
+		},
+		{
+			id: 9,
+			name: "kitz",
+			cover: "https://i.scdn.co/image/ab6761610000e5eb282cbecae273b1029752362c",
+			songs: [29,30]
+		},
+		{
+			id: 10,
+			name: "Juice WRLD",
+			cover: "https://i.scdn.co/image/ab6761610000e5eb23a60030944f7853c21565ef",
+			songs: [16]
+		},
+		{
+			id: 11,
+			name: "Scott Cawthon",
+			cover: "https://static.wikia.nocookie.net/five-nights-at-freddys73/images/6/6d/Scottcloseup.png/revision/latest/thumbnail/width/360/height/360?cb=20180310011838",
+			songs: [28]
+		},
+		{
+			id: 12,
+			name: "Cybertrash",
+			cover: "https://i.scdn.co/image/ab6761610000e5eb23e2f284f5144b92293e780a",
+			songs: [33]
+		},
+		{
+			id: 13,
+			name: "MO$h",
+			cover: "https://i.scdn.co/image/ab67616d00001e02ab4cfef76cab5a69e2dfa02b",
+			songs: [34]
+		},
+		{
+			id: 14,
+			name: "Ericdoa",
+			cover: "https://i1.sndcdn.com/artworks-YCBEkpzztBcSdOXE-isO6uA-t500x500.jpg",
+			songs: [31,32,35]
+		},		
+		{
+			id: 15,
+			name: "Nicopatty",
+			cover: "https://i.scdn.co/image/ab6761610000e5eb335cea405704d95fb4c12115",
+			songs: [36,37,38]
 		},
     ]
 };
