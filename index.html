@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddens</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="REDDENSV2.png" type="image/png">
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="REDDENSV2.png" alt="Reddens Logo" class="logo-image">
+                <span>Reddens</span>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li id="home-link" class="active"><i class="fas fa-home"></i> Home</li>
+                    <li id="search-tab"><i class="fas fa-search"></i> Search</li>
+                    <li><i class="fas fa-book"></i> Your Library</li>
+                </ul>
+            </nav>
+            <div class="playlists">
+                <div class="create-playlist" id="create-playlist-btn">
+                    <div class="create-btn">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <span>Create Playlist</span>
+                </div>
+                <div class="liked-songs" id="liked-songs-btn">
+                    <div class="liked-btn">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <span>Liked Songs</span>
+                </div>
+            </div>
+            <div class="playlist-list">
+                <h3>YOUR PLAYLISTS</h3>
+                <ul id="user-playlists">
+                    <!-- User playlists will be loaded dynamically -->
+                </ul>
+                
+                <h3>ALBUMS</h3>
+                <ul id="album-list">
+                    <!-- Albums will be loaded dynamically -->
+                </ul>
+                
+                <h3>ARTISTS</h3>
+                <ul id="artist-list">
+                    <!-- Artists will be loaded dynamically -->
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="navigation">
+                    <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search for songs, artists, or playlists">
+                </div>
+                <div class="user-menu">
+                    <button class="user-btn">
+                        <img src="https://i.pravatar.cc/30" alt="User">
+                        <span>User Name</span>
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="content">
+                <!-- Search Results Section -->
+                <section id="search-results" class="search-results-section">
+                    <!-- Search results will be displayed here -->
+                </section>
+                
+                <section class="featured">
+                    <h1>Good afternoon</h1>
+                    <div class="featured-cards" id="featured-albums">
+                        <!-- Featured albums will be loaded dynamically -->
+                    </div>
+                </section>
+
+                <section class="recently-played">
+                    <div class="section-header">
+                        <h2>Recently played</h2>
+                        <a href="#" class="see-all" data-section="recent-songs">SEE ALL</a>
+                    </div>
+                    <div class="card-grid" id="recent-songs">
+                        <!-- Recently played songs will be loaded dynamically -->
+                    </div>
+                </section>
+
+                <section class="made-for-you">
+                    <div class="section-header">
+                        <h2>Popular artists</h2>
+                        <a href="#" class="see-all" data-section="popular-artists">SEE ALL</a>
+                    </div>
+                    <div class="card-grid" id="popular-artists">
+                        <!-- Popular artists will be loaded dynamically -->
+                    </div>
+                </section>
+                
+                <section class="all-songs">
+                    <div class="section-header">
+                        <h2>All songs</h2>
+                        <a href="#" class="see-all" data-section="all-songs-list">SEE ALL</a>
+                    </div>
+                    <div class="song-list" id="all-songs-list">
+                        <!-- All songs will be loaded here -->
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Player -->
+    <footer class="player">
+        <div class="now-playing">
+            <img id="current-song-img" src="REDDENSV2.png" alt="Album">
+            <div class="track-info">
+                <div id="current-song-title" class="track-name">Select a song</div>
+                <div id="current-song-artist" class="artist-name">to start playing</div>
+            </div>
+            <button id="like-current-song" class="like-btn"><i class="far fa-heart"></i></button>
+            <button id="add-to-playlist-btn" class="add-to-playlist-btn"><i class="fas fa-plus"></i></button>
+        </div>
+
+        <div class="player-controls">
+            <div class="control-buttons">
+                <button id="shuffle-btn" class="control-btn"><i class="fas fa-random"></i></button>
+                <button id="prev-btn" class="control-btn"><i class="fas fa-step-backward"></i></button>
+                <button id="play-pause-btn" class="play-pause-btn"><i class="fas fa-play"></i></button>
+                <button id="next-btn" class="control-btn"><i class="fas fa-step-forward"></i></button>
+                <button id="repeat-btn" class="control-btn"><i class="fas fa-redo"></i></button>
+            </div>
+            <div class="progress-bar">
+                <span id="current-time" class="current-time">0:00</span>
+                <div class="progress-container">
+                    <div class="progress"></div>
+                </div>
+                <span id="total-time" class="total-time">0:00</span>
+            </div>
+        </div>
+
+        <div class="additional-controls">
+            <button class="control-btn"><i class="fas fa-list"></i></button>
+            <button class="control-btn"><i class="fas fa-desktop"></i></button>
+            <div class="volume-control">
+                <button id="volume-btn" class="control-btn"><i class="fas fa-volume-up"></i></button>
+                <div class="volume-bar">
+                    <div class="volume-level"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Audio element for playing music -->
+    <audio id="audio-player"></audio>
+
+    <!-- Modals -->
+    <!-- Create Playlist Modal -->
+    <div id="create-playlist-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create Playlist</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="playlist-image-container">
+                    <img id="playlist-image-preview" src="REDDENSV2.png" alt="Playlist Image">
+                    <div class="image-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span>Choose image</span>
+                    </div>
+                    <input type="file" id="playlist-image-input" accept="image/*" style="display: none;">
+                </div>
+                <div class="form-group">
+                    <label for="playlist-name">Playlist name</label>
+                    <input type="text" id="playlist-name" placeholder="My Playlist" required>
+                </div>
+                <div class="form-group">
+                    <label for="playlist-description">Description (optional)</label>
+                    <textarea id="playlist-description" placeholder="Give your playlist a description"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button id="cancel-playlist" class="btn-secondary">Cancel</button>
+                    <button id="save-playlist" class="btn-primary">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Playlist Modal -->
+    <div id="edit-playlist-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Edit Playlist</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="playlist-image-container">
+                    <img id="edit-playlist-image" src="REDDENSV2.png" alt="Playlist Image">
+                    <div class="image-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span>Change image</span>
+                    </div>
+                    <input type="file" id="edit-playlist-image-input" accept="image/*" style="display: none;">
+                </div>
+                <div class="form-group">
+                    <label for="edit-playlist-name">Playlist name</label>
+                    <input type="text" id="edit-playlist-name" placeholder="My Playlist" required>
+                    <input type="hidden" id="edit-playlist-id">
+                </div>
+                <div class="form-group">
+                    <label for="edit-playlist-description">Description (optional)</label>
+                    <textarea id="edit-playlist-description" placeholder="Give your playlist a description"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button id="delete-playlist" class="btn-danger">Delete playlist</button>
+                    <div>
+                        <button id="cancel-edit-playlist" class="btn-secondary">Cancel</button>
+                        <button id="save-edit-playlist" class="btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add to Playlist Modal -->
+    <div id="add-to-playlist-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add to playlist</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="playlist-list-modal" id="playlist-select">
+                    <!-- Playlists will be loaded here -->
+                </div>
+                <div class="form-actions">
+                    <button id="cancel-add-to-playlist" class="btn-secondary">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- See All Modal -->
+    <div id="see-all-modal" class="modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2 id="see-all-title">All Items</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="see-all-content" class="see-all-container">
+                    <!-- Content will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
