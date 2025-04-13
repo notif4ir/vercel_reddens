@@ -342,6 +342,51 @@ const musicData = {
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20grand%20piano.mp3",
             duration: "auto"
         },
+				{
+		    id: 39,
+            title: "Here I Come",
+            artist: "LSplash",
+            album: "Roblox Doors - OST",
+            cover: "https://i.scdn.co/image/ab67616d0000b2735e7cc3fc0de935cb09d681b6",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/SpotiDown.App%20-%20Here%20I%20Come%20-%20LSPLASH.mp3",
+            duration: "auto"
+        },
+		{
+		    id: 40,
+            title: "Unhinged",
+            artist: "LSplash",
+            album: "Roblox Doors - OST",
+            cover: "https://i.scdn.co/image/ab67616d0000b273e427154ba07871825a9ac721",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/SpotiDown.App%20-%20Unhinged%20-%20LSPLASH.mp3",
+            duration: "auto"
+        },
+		{
+		    id: 41,
+            title: "Unhinged II",
+            artist: "LSplash",
+            album: "Roblox Doors - OST",
+            cover: "https://i.scdn.co/image/ab67616d0000b2737bfc4c0b432ec08b454116f2",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/SpotiDown.App%20-%20Unhinged%20II%20-%20LSPLASH.mp3",
+            duration: "auto"
+        },
+		{
+		    id: 42,
+            title: "Elevator Jam",
+            artist: "LSplash",
+            album: "Roblox Doors - OST",
+            cover: "https://i.scdn.co/image/ab67616d0000b2730f94342d82f1e6850d649ea9",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/SpotiDown.App%20-%20Elevator%20Jam%20-%20LSPLASH.mp3",
+            duration: "auto"
+        },
+		{
+		    id: 43,
+            title: "Guiding Light",
+            artist: "LSplash",
+            album: "Roblox Doors - OST",
+            cover: "https://i1.sndcdn.com/artworks-VtRtqby5OVym-0-t500x500.jpg",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/SpotiDown.App%20-%20Guiding%20Light%20-%20LSPLASH.mp3",
+            duration: "auto"
+        },
 		/*
 		{
             id: 20,
@@ -363,7 +408,7 @@ const musicData = {
             name: "Roblox Doors - OST",
             artist: "LSplash",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20115556.png",
-            songs: [2,6,13,22]
+            songs: [2,6,13,22,39,40,41,42,43]
         },
 		{
             id: 2,
@@ -393,7 +438,7 @@ const musicData = {
             id: 1,
             name: "LSplash",
             cover: "https://i.scdn.co/image/ab6761610000e5eb4de95f4daada83eedf6019b8",
-            songs: [2,6,13,22]
+            songs: [2,6,13,22,39,40,41,42,43]
         },
         {
             id: 2,
