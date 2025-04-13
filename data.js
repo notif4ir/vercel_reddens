@@ -4,7 +4,7 @@ const musicData = {
             id: 1,
             title: "Time Paradox OST",
             artist: "Toby Fox",
-            album: "Neon Horizons",
+            album: "",
             cover: "https://i.pinimg.com/736x/79/3d/dd/793ddd4ad5ca955a99f5a8ba728db845.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Undertale_%20Time%20Paradox%20%5BOST%5D.mp3",
             duration: "auto"
@@ -40,7 +40,7 @@ const musicData = {
             id: 5,
             title: "Double Life",
             artist: "Pharrel Williams",
-            album: "none",
+            album: "",
             cover: "https://ecsmedia.pl/c/double-life-b-iext156053548.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Pharrell%20Williams%20-%20Double%20Life%20(Lyrics)%20(from%20Despicable%20Me%204).mp3",
             duration: "auto"
@@ -58,7 +58,7 @@ const musicData = {
             id: 7,
             title: "Calm Before The Storm",
             artist: "The Foundation RBLX",
-            album: "none",
+            album: "",
             cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/refs/heads/main/Zrzut%20ekranu%202025-04-12%20113252.png",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Calm%20Before%20the%20Storm.mp3",
             duration: "auto"
@@ -67,7 +67,7 @@ const musicData = {
             id: 8,
             title: "Chess Type Beat",
             artist: "TheVibeGuide",
-            album: "none",
+            album: "",
             cover: "https://i.scdn.co/image/ab67616d0000b27307ff9101b807094a8d95e472",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Rat%20Dance%20Song%20(Chess%20Type%20Beat).mp3",
             duration: "auto"
@@ -76,7 +76,7 @@ const musicData = {
             id: 9,
             title: "KSI - Thick Of It",
             artist: "KSI",
-            album: "Metropolitan",
+            album: "",
             cover: "https://i1.sndcdn.com/artworks-8LPbcMKyqu1ZCd87-2AfrRg-t500x500.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/KSI%20-%20Thick%20Of%20It%20(feat.%20Trippie%20Redd)%20%5BOfficial%20Lyric%20Video%5D.mp3",
             duration: "auto"
@@ -85,7 +85,7 @@ const musicData = {
             id: 10,
             title: "Amnesia",
             artist: "Euphoric Brothers",
-            album: "none",
+            album: "",
             cover: "https://images.unsplash.com/photo-1502657877623-f66bf489d236?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVkJTIwc3VucmlzZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Amnesia%20-%20Official%20Music%20Video%20(from%20Garten%20of%20Banban)%20%20Lyrics.mp3",
             duration: "auto"
@@ -94,7 +94,7 @@ const musicData = {
             id: 11,
             title: "A.P.T.",
             artist: "Bruno Mars",
-            album: "none",
+            album: "",
             cover: "https://i1.sndcdn.com/artworks-az7nDtlExUZa7OyJ-zgeE1A-t500x500.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/ROSE%20&%20Bruno%20Mars%20-%20APT.%20(Official%20Music%20Video).mp3",
             duration: "auto"
@@ -139,7 +139,7 @@ const musicData = {
             id: 16,
             title: "Lucid Dreams",
             artist: "Juice WRLD",
-            album: "none",
+            album: "",
             cover: "https://m.media-amazon.com/images/M/MV5BYWIwNjc5Y2UtYmY0Zi00YzQ3LWIzZDctZWRlODI1OGVjNDA3XkEyXkFqcGc@._V1_QL75_UY190_CR74,0,190,190_.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Juice%20Wrld%20-%20Lucid%20Dreams%20(Lyrics).mp3",
             duration: "auto"
@@ -157,7 +157,7 @@ const musicData = {
             id: 18,
             title: "Jeff's Jazzy Jingle",
             artist: "The Foundation RBLX",
-            album: "none",
+            album: "",
             cover: "https://github.com/notif4ir/reddins_database/blob/main/Zrzut%20ekranu%202025-04-12%20120247.png?raw=true",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Jeff's%20Jazzy%20Jingle.mp3",
             duration: "auto"
@@ -184,7 +184,7 @@ const musicData = {
             id: 21,
             title: "Watch This!",
             artist: "The Foundation RBLX",
-            album: "none",
+            album: "",
             cover: "https://www.dafont.com/forum/attach/orig/1/1/1134278.png",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Watch%20This.mp3",
             duration: "auto"
@@ -220,7 +220,7 @@ const musicData = {
             id: 25,
             title: "It's Raining Tacos!",
             artist: "undefined",
-            album: "none",
+            album: "",
             cover: "https://pm1.aminoapps.com/7381/68fac732840e0b334041bc1a91d606416b43cb84r1-633-324v2_128.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/ITS%20RAINING%20TACOS!%20(Roblox%20Music%20Video).mp3",
             duration: "auto"
@@ -229,7 +229,7 @@ const musicData = {
             id: 26,
             title: "Dive - A One",
             artist: "undefined",
-            album: "none",
+            album: "",
             cover: "https://preview.redd.it/kj-kj-stickman-saga-runs-the-anime-videogame-gauntlet-v0-1gmz028x1npd1.jpg?width=383&format=pjpg&auto=webp&s=7cf19baa7daacca59aa512f33f3d36bbf8c1310e",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Dive!!%20%20A-One%20(The%20Strongest%20Battlegrounds%20KJ's%20Official%20Theme%20Song).mp3",
             duration: "auto"
@@ -238,7 +238,7 @@ const musicData = {
             id: 27,
             title: "Salinewin.exe [LOUD]",
             artist: "undefined",
-            album: "none",
+            album: "",
             cover: "https://github.com/notif4ir/reddins_database/blob/main/Zrzut%20ekranu%202025-04-12%20182043.png?raw=true",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Salinewin.exe%20V2%20virus%20beat%20(LOUD).mp3",
             duration: "auto"
@@ -247,7 +247,7 @@ const musicData = {
 		    id: 28,
             title: "FNAF Puppet's Music Box",
             artist: "Scott Cawthon",
-            album: "none",
+            album: "",
             cover: "https://i.ytimg.com/vi/S8Dq7a3c45o/hq2.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/FNAF%202_%20The%20Puppet%20music%20box.mp3",
             duration: "auto"
@@ -256,7 +256,7 @@ const musicData = {
 		    id: 29,
             title: "astigmatism",
             artist: "kitz",
-            album: "none",
+            album: "",
             cover: "https://i.ytimg.com/vi/S8Dq7a3c45o/hq2.jpg",
             mp3: "https://i.scdn.co/image/ab67616d0000b273633f2b947f60c360020dd6d1",
             duration: "auto"
@@ -265,7 +265,7 @@ const musicData = {
 		    id: 30,
             title: "peripheral",
             artist: "kitz",
-            album: "none",
+            album: "",
             cover: "https://i.scdn.co/image/ab67616d0000b273cf72ce32d3b164a5d9316fa7",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20peripheral.mp3",
             duration: "auto"
@@ -274,7 +274,7 @@ const musicData = {
 		    id: 31,
             title: "cheap liqour",
             artist: "Ericdoa",
-            album: "none",
+            album: "",
             cover: "https://i.scdn.co/image/ab67616d0000b2735e7cc3fc0de935cb09d681b6",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20cheap%20liquor.mp3",
             duration: "auto"
@@ -283,7 +283,7 @@ const musicData = {
 		    id: 32,
             title: "heather",
             artist: "Ericdoa",
-            album: "none",
+            album: "",
             cover: "https://i.scdn.co/image/ab67616d0000b273e427154ba07871825a9ac721",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20heather.mp3",
             duration: "auto"
@@ -292,7 +292,7 @@ const musicData = {
 		    id: 33,
             title: "hang tight",
             artist: "Cybertrash",
-            album: "none",
+            album: "",
             cover: "https://i.scdn.co/image/ab67616d0000b2737bfc4c0b432ec08b454116f2",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20hang%20tight.mp3",
             duration: "auto"
@@ -301,7 +301,7 @@ const musicData = {
 		    id: 34,
             title: "twisted",
             artist: "MO$h",
-            album: "none",
+            album: "",
             cover: "https://i.scdn.co/image/ab67616d0000b2730f94342d82f1e6850d649ea9",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20twisted.mp3",
             duration: "auto"
@@ -310,7 +310,7 @@ const musicData = {
 		    id: 35,
             title: "dancinwithsomebawdy",
             artist: "Ericdoa",
-            album: "none",
+            album: "",
             cover: "https://i1.sndcdn.com/artworks-VtRtqby5OVym-0-t500x500.jpg",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20dancinwithsomebawdy.mp3",
             duration: "auto"
@@ -319,7 +319,7 @@ const musicData = {
 		    id: 36,
             title: "stepback",
             artist: "Nicopatty",
-            album: "none",
+            album: "",
             cover: "https://i.scdn.co/image/ab67616d0000b27390b39826a0161743a89a7aff",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20stepback.mp3",
             duration: "auto"
@@ -328,7 +328,7 @@ const musicData = {
 		    id: 37,
             title: "kensuke",
             artist: "Nicopatty",
-            album: "none",
+            album: "",
             cover: "https://i.scdn.co/image/ab67616d0000b273a704f447fbba5183aeeb11f0",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20kensuke.mp3",
             duration: "auto"
@@ -337,7 +337,7 @@ const musicData = {
 		    id: 38,
             title: "Grand Piano",
             artist: "Nicopatty",
-            album: "none",
+            album: "",
             cover: "https://i.scdn.co/image/ab67616d00001e02199a52950442425d19d81aa8",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/%5BSPOTDOWNLOADER.COM%5D%20grand%20piano.mp3",
             duration: "auto"
