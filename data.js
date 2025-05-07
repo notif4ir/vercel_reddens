@@ -387,17 +387,15 @@ const musicData = {
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/SpotiDown.App%20-%20Guiding%20Light%20-%20LSPLASH.mp3",
             duration: "auto"
         },
-		/*
-		{
-            id: 20,
-            title: "",
-            artist: "",
-            album: "",
-            cover: "",
-            mp3: "",
+			{
+		    id: 44,
+            title: "Creative Control",
+            artist: "undefined",
+            album: "undefined",
+            cover: "https://github.com/notif4ir/reddins_database/blob/main/Zrzut%20ekranu%202025-05-07%20154415.png?raw=true",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Creative%20Control.mp3",
             duration: "auto"
         },
-		*/
     ],
     
     playlists: [],
