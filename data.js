@@ -390,7 +390,7 @@ const musicData = {
 			{
 		    id: 44,
             title: "Creative Control",
-            artist: "undefined",
+            artist: "SMG4",
             album: "undefined",
             cover: "https://github.com/notif4ir/reddins_database/blob/main/Zrzut%20ekranu%202025-05-07%20154415.png?raw=true",
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Creative%20Control.mp3",
@@ -521,6 +521,12 @@ const musicData = {
 			name: "Nicopatty",
 			cover: "https://i.scdn.co/image/ab6761610000e5eb335cea405704d95fb4c12115",
 			songs: [36,37,38]
+		},
+	    {
+			id: 16,
+			name: "SMG4",
+			cover: "https://i.scdn.co/image/ab6761610000e5eb9c44c00a46132ed4aa2b4564",
+			songs: [44]
 		},
     ]
 };
