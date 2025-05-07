@@ -396,6 +396,15 @@ const musicData = {
             mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Creative%20Control.mp3",
             duration: "auto"
         },
+			{
+		    id: 45,
+            title: "Puzzle Park",
+            artist: "SMG4",
+            album: "undefined",
+            cover: "https://raw.githubusercontent.com/notif4ir/reddins_database/7d2d946044efb57eb7b5bb1465b9d44bdd859474/Zrzut%20ekranu%202025-05-07%20154431.png",
+            mp3: "https://github.com/notif4ir/reddins_database/raw/refs/heads/main/Puzzle%20Park.mp3",
+            duration: "auto"
+        },
     ],
     
     playlists: [],
